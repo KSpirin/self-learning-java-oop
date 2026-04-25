@@ -1,0 +1,32 @@
+# ===== OS =====
+.DS_Store
+Thumbs.db
+.AppleDouble
+._*
+Icon?
+
+# ===== Java & Build Artifacts =====
+*.class
+bin/
+out/
+build/
+*.jar
+*.zip
+*.tar.gz
+
+# ===== Editors / IDEs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*.scratch
+
+# ===== Logs & Temporary =====
+*.log
+tmp/
+
+# ===== Secrets =====
+.env
+.env.*
+*.key
+*.pem
