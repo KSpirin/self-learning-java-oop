@@ -1,17 +1,20 @@
+import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        //DATATYPE
-        int age = 19;
-        long salary = 9000000000000L;
+        Scanner in = new Scanner(System.in); //can change in to whatever you want
 
-        double pi = 3.1415926535;
-        float gpax = 3.12f;
+        System.out.print("age: ");
+        int age = in.nextInt();
 
-        char grade = 'A';
-        String name = "Miya";
+        in.nextLine();      //If you use nextInt before nextLine you must add x.nextLine between
 
-        boolean liar = false;
+        System.out.print("name: ");
+        String name = in.nextLine();
 
-        System.out.println(name + " is " + age + " years old\n");
-    }
+        System.out.println("your name is " + name);
+        System.out.println("your age is " + age);
+
+        in.close(); //return the memomory
+    }//print is print yk
+    //println is print line
 }
