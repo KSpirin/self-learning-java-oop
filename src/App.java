@@ -1,6 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("first input: " + args[0]);
-        System.out.println("first input: " + args[1]);
+        int x = 10;
+        double y = 1.2;
+        int mul = (int)(x * y); //casting to int
+        System.out.println("result: " + mul);
     }
 }
