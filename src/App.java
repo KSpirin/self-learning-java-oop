@@ -6,11 +6,8 @@ public class App {
         System.out.print("enter n: ");
         int n = input.nextInt();
 
-        int i = 0;
-        do{
-            ++i;
-            System.out.println(i);
-        }while(i != n);
+        for(int i = 0; i < n; i++)
+            System.out.println(i+1);
 
         input.close();
     }
