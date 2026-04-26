@@ -1,30 +1,18 @@
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner kb = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("will you shut down?: (enter [shutdown / restart / sleep / cancel])");
-        String cmd = kb.nextLine();
+        System.out.print("enter n: ");
+        int n = input.nextInt();
 
-        switch (cmd){
-            case "shutdown":
-                System.out.println("Shutting down...");
-                break;
-            case "restart":
-                System.out.println("Restarting...");
-                break;
-            case "sleep":
-                System.out.println("---sleep...");
-                break;
-            case "cancel":
-                System.out.println("-----");
-                break;
-            default:
-                System.out.println("invalid command");
+        int i = 0;
+        while (i < n){
+            System.out.println(i);
+            i++;
         }
 
-
-        kb.close();
+        input.close();
     }
 
 }
