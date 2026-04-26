@@ -1,20 +1,25 @@
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner in = new Scanner(System.in); //can change in to whatever you want
+        Scanner kb = new Scanner(System.in);
 
-        System.out.print("age: ");
-        int age = in.nextInt();
+        System.out.print("enter your score: ");
+        int score = kb.nextInt();
+        if(score < 0 || score > 100)
+            System.out.println("invalid score");
+        else if(score >= 80 && score <= 100)
+            System.out.println("A");
+        else if(score >= 70)
+            System.out.println("B");
+        else if (score >= 60)
+            System.out.println("C");
+        else if (score >= 50)
+            System.out.println("D");
+        else
+            System.out.println("F");
 
-        in.nextLine();      //If you use nextInt before nextLine you must add x.nextLine between
+        kb.close();
+    }
 
-        System.out.print("name: ");
-        String name = in.nextLine();
-
-        System.out.println("your name is " + name);
-        System.out.println("your age is " + age);
-
-        in.close(); //return the memomory
-    }//print is print yk
-    //println is print line
 }
+// System.out.println();
