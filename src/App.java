@@ -7,10 +7,10 @@ public class App {
         int n = input.nextInt();
 
         int i = 0;
-        while (i < n){
+        do{
+            ++i;
             System.out.println(i);
-            i++;
-        }
+        }while(i != n);
 
         input.close();
     }
