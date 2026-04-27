@@ -19,9 +19,11 @@ public class App {
         // For-Each Loops
         for(String n : name)
             System.out.print(n + " ");
+
+        input.close();
     }
 
 }
 // System.out.println();
 // Scanner input = new Scanner(System.in);
-//intput.close()
+// intput.close();
