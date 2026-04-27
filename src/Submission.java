@@ -1,14 +1,13 @@
 public class Submission {
-    String fileName;
-    String language;
-    int score;
+    private String fileName;
+    private String language;
+    private int score;
+    //private : ppl cant change data by using name.x
 
     public Submission (String inname,String inlang){ // Constructor(special method)
-    //must use same name as Class
-    //dont have void or return type
         fileName = inname;
         language = inlang;
-        score = 0;  // 0 by default
+        score = 0;
     }
 
     public void DisplayInfo(){
