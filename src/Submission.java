@@ -2,15 +2,18 @@ public class Submission {
     private String fileName;
     private String language;
     private int score;
+    private Student std;
 
-    public Submission (String inname,String inlang){ // Constructor(special method)
+    public Submission (String inname,String inlang,Student instd){
         fileName = inname;
         language = inlang;
         score = 0;
+        std = instd;
     }
 
     public void DisplayInfo(){
         System.out.println("-----checking-----");
+        System.out.println("studen INFO -> " + std.GetID() + " " + std.GetName());
         System.out.println("file name: " + fileName);
         System.out.println("language: " + language);
         System.out.println("current score: " + score);

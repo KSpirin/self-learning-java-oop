@@ -2,11 +2,13 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-    Submission work1 = new Submission("main.cpp","cpp");
-    Submission work2 = new Submission("main.py","py");
+    Student s1 = new Student("0001","miya");
+    Student s2 = new Student("0002", "pirin");
+    Submission work1 = new Submission("main.cpp","cpp",s1);
+    Submission work2 = new Submission("main.py","py",s2);
 
     work1.SetScore(90);
-    work1.SetScore(9999);
+    work2.SetScore(99);
     System.out.println("work1 score = " + work1.GetScore());
 
 
