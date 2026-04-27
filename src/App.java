@@ -5,6 +5,10 @@ public class App {
     Submission work1 = new Submission("main.cpp","cpp");
     Submission work2 = new Submission("main.py","py");
 
+    work1.SetScore(90);
+    work1.SetScore(9999);
+    System.out.println("work1 score = " + work1.GetScore());
+
 
     work1.DisplayInfo();
     System.out.println();
