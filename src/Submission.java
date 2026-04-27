@@ -3,6 +3,14 @@ public class Submission {
     String language;
     int score;
 
+    public Submission (String inname,String inlang){ // Constructor(special method)
+    //must use same name as Class
+    //dont have void or return type
+        fileName = inname;
+        language = inlang;
+        score = 0;  // 0 by default
+    }
+
     public void DisplayInfo(){
         System.out.println("-----checking-----");
         System.out.println("file name: " + fileName);
