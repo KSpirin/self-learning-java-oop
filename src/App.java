@@ -1,31 +1,21 @@
 import java.util.Scanner;
 
 public class App {
-
-    public static void caldiscount(double arr[],int Dis) { // array
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = arr[i] * (1 - Dis / 100.0); // discount 50% off
-        //if we use / 100 its will be int and make this code error
-        // 50 / 100 = 0 NOT 0.5 bc int thats why
-    }
-
     public static void main(String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
+    Submission work1 = new Submission();
+    work1.fileName = "main.cpp";
+    work1.language = "cpp";
+    work1.score = 100;
 
-        double[] price = {130, 70, 75, 50, 123};
-        for (double p : price)
-            System.out.printf("%.2f ",p);
+    Submission work2 = new Submission();
+    work2.fileName = "main.py";
+    work2.language = "py";
+    work2.score = 70;
 
-        System.out.print("\nendter the discount(%): ");
-        int discount = input.nextInt();
-        caldiscount(price, discount);
-
-        for (double p : price)
-            System.out.printf("%.2f ", p);
-
-        input.close();
+    work1.DisplayInfo();
+    System.out.println();
+    work2.DisplayInfo();
     }
-
 }
 // System.out.println();
 // Scanner input = new Scanner(System.in);
