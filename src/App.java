@@ -15,6 +15,14 @@ public class App {
     work1.DisplayInfo();
     System.out.println();
     work2.DisplayInfo();
+
+    System.out.println("\n--- running code process ---");
+
+    CppCompiler cppcode = new CppCompiler();
+    cppcode.runCode(work1.getFileName());
+
+    PyCompiler pycode = new PyCompiler();
+    pycode.runCode(work2.getFileName());
     }
 }
 // System.out.println();

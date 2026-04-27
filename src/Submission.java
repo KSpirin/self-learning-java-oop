@@ -23,6 +23,9 @@ public class Submission {
     public int GetScore(){
         return score;
     }
+    public String getFileName() {
+        return fileName;
+    }
 
     //Setter : change data
     public void SetScore(int newscore){
