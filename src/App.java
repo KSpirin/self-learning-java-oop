@@ -1,26 +1,22 @@
 import java.util.Scanner;
+
 public class App {
+
+    public static double calvat(double price) {// int double
+        double finalprice = price * (0.07);
+        return finalprice;
+    }
+
     public static void main(String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
-        //method 1
-        System.out.println("enter 5 number");
-        int[] arr = new int[5];
-        for (int i = 0; i < 5; i++)
-            arr[i] = input.nextInt();
-        for (int i = 0; i < 5; i++)
-            System.out.print(arr[i] + " ");
-        System.out.print("\n");
-        //method 2
-        String[] name = {"miya","captain","tar"};
+        Scanner in = new Scanner(System.in);
 
-        //sizeof
-        System.out.println("size of name = " + name.length);
+        System.out.print("enter the price: ");
+        int price = in.nextInt();
+        double vat = calvat(price);
+        System.out.printf("vat 7%% = %.2f\n", calvat(price)); //"%%" = %
+        System.out.printf("current price = %.2f\n", (price + vat));
 
-        // For-Each Loops
-        for(String n : name)
-            System.out.print(n + " ");
-
-        input.close();
+        in.close();
     }
 
 }
