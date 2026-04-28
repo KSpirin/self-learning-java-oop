@@ -1,7 +1,6 @@
 public class PyCompiler extends Compiler{
-    @Override // override parent's behavior
-    public void runCode(String file) {
-        super.runCode(file); // use old parent's behavior (use super.)
+    @Override
+    public void execute(String file) {
         System.out.println("[Py] use python3 cmd to compile and run");
     }
 }
