@@ -20,12 +20,10 @@ public class App {
 
     Compiler code;
     code = new CppCompiler();
-    code.prepare("main.cpp");
-    code.execute("main.cpp");
+    code.runProcess("main.cpp");
 
     code = new PyCompiler();
-    code.prepare("main.py");
-    code.execute("main.py");
+    code.runProcess("main.py");
     }
 }
 // System.out.println();
