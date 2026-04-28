@@ -18,11 +18,12 @@ public class App {
 
     System.out.println("\n--- running code process ---");
 
-    CppCompiler cppcode = new CppCompiler();
-    cppcode.runCode(work1.getFileName());
-
-    PyCompiler pycode = new PyCompiler();
-    pycode.runCode(work2.getFileName());
+    Compiler code;
+    // Polymorphism parent class using child class
+    code = new CppCompiler();
+    code.runCode("main.cpp");
+    code = new PyCompiler();
+    code.runCode("main.py");
     }
 }
 // System.out.println();

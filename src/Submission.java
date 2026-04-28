@@ -29,7 +29,6 @@ public class Submission {
 
     //Setter : change data
     public void SetScore(int newscore){
-        //make some condition (why not yk :) ) (no needed btw)
         if (score < 0 || newscore > 100){
             System.out.println("invalid score (must be in range 0-100)");
         }
